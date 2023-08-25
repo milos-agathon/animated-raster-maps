@@ -110,7 +110,7 @@ cropped_rasters <- lapply(
     terra::vect(bb)
 )
 
-layer1 <- istanbul_rasters[[1]]
+layer1 <- cropped_rasters[[1]]
 ggplot() +
     tidyterra::geom_spatraster(
         data = layer1
